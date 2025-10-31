@@ -1,0 +1,40 @@
+.flex-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 20px;
+    max-width: 24rem;
+    margin: auto;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.flex-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    border-radius: 10px;
+}
+
+p {
+    font-family: var(--font-figtree);
+}
+
+h1 {
+    font-family: var(--font-figtree);
+}
+body {
+    background-color: var(--yellow);
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+    --font-figtree: figtree;
+}

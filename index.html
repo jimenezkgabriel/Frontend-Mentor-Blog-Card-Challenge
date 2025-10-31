@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+</head>
+
+<body>
+  <!--Card Container-->
+  <div class="flex-card">
+    <!--Picture Container-->
+    <div>
+      <img src="./assets/images/illustration-article.svg" alt="">
+    </div>
+
+    <!--Contains text and the profile pic thing-->
+    <div>
+
+      <!--Just says "Learning"-->
+      <div
+        style="display: flex; background-color: var(--yellow); border-radius: 4px; padding: 12px 4px; font-weight: 800; flex-basis: 0; max-width: 20%;">
+        <p>Learning</p>
+      </div>
+      <p>Published 21 Dec 2023</p>
+      <h1>HTML & CSS foundations</h1>
+      <p style="color: var(--gray-500)">These languages are the backbone of every website, defining structure, content,
+        and presentation.</p>
+
+      <!--Flexbox for profile stuff? Might need to remove-->
+      <div style="display: flex; align-items: center;">
+        <img src="./assets/images/image-avatar.webp"
+          style="border-style: solid; border-width: 2px; border-radius: 100%;" alt="Profile pciture">
+        <p style="font-weight: 800;">Greg Hooper</p>
+      </div>
+    </div>
+
+  </div>
+  <p style="text-align: center;">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Gabriel Jimenez</a>.
+  </p>
+</body>
+
+</html>
