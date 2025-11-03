@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style/bootstrap/dist/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -18,36 +18,66 @@
 </head>
 
 <body>
-  <!--Card Container-->
-  <div class="flex-card">
-    <!--Picture Container-->
-    <div>
-      <img src="./assets/images/illustration-article.svg" alt="">
-    </div>
+  <!--Slight custom styling-->
+  <style>
+    .badge {
+      background-color: hsl(47, 88%, 63%);
+      color: hsl(0, 0%, 7%);
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-weight: 800;
+      line-height: 2;
+    }
 
-    <!--Contains text and the profile pic thing-->
-    <div>
+    .card {
+      max-width: 24rem;
+      filter: drop-shadow(8px 8px);
+    }
 
-      <!--Just says "Learning"-->
-      <div
-        style="display: flex; background-color: var(--yellow); border-radius: 4px; padding: 12px 4px; font-weight: 800; flex-basis: 0; max-width: 20%;">
-        <p>Learning</p>
+    p,
+    h4 {
+      font-family: figtree;
+      font-weight: 500;
+      color: hsl(0, 0%, 7%);
+    }
+
+    body {
+      background-color: hsl(47, 88%, 63%);
+    }
+  </style>
+  <!--Viewport to align things in the center of the screen-->
+  <div class="container vh-100 align-content-center">
+    <div class="row">
+      <div class="col">
+        <!--The card-->
+        <div class="card p-4 mx-auto border-black">
+          <!--Image-->
+          <img src="./assets/images/illustration-article.svg" class="card-img" style="border-radius: 10px;"
+            alt="Blog background.">
+            <!--The card body-->
+          <div class="card-body p-0 py-4">
+            <p class="card-text badge fs-6 ">Learning</p>
+            <p class="card-subtitle">Published 21 Dec 2023</p>
+            <h4 class="card-text" style="margin: 12px 0px; font-weight: 800;">HTML & CSS foundations</h4>
+            <p class="card-text" style="color: hsl(0, 0%, 42%);">These languages are the backbone of every website,
+              defining structure, content,
+              and presentation.</p>
+          </div>
+          <!--A container housing the profile picture and the name-->
+          <div class="row align-items-center">
+            <div class="col-2">
+              <img src="./assets/images/image-avatar.webp" class="img-fluid" style="max-width: 2rem;"
+                alt="Profile pciture.">
+            </div>
+            <div class="col p-0">
+              <p class="m-0" style="font-weight: 800;">Greg Hooper</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <p>Published 21 Dec 2023</p>
-      <h1>HTML & CSS foundations</h1>
-      <p style="color: var(--gray-500)">These languages are the backbone of every website, defining structure, content,
-        and presentation.</p>
-
-      <!--Flexbox for profile stuff? Might need to remove-->
-      <div style="display: flex; align-items: center;">
-        <img src="./assets/images/image-avatar.webp"
-          style="border-style: solid; border-width: 2px; border-radius: 100%;" alt="Profile pciture">
-        <p style="font-weight: 800;">Greg Hooper</p>
-      </div>
     </div>
-
   </div>
-  <p style="text-align: center;">
+  <p class="sticky-bottom">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Gabriel Jimenez</a>.
   </p>
